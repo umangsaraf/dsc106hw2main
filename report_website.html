@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title> MCDONALD'S Data Analysis</title>
+    </head>
+    <body>
+        <style>
+            h1 {
+                margin-top: 30;
+                color: yellow;
+                font-family: verdana;
+                font-size: 300%;
+   
+        }
+        h2 {
+                margin-top: 30;
+                color: red;
+                font-family: verdana;
+                text-align:center;
+   
+        }
+        h3 {
+                margin-top: 30;
+                color: red;
+                font-family: verdana;
+                text-align:center;
+   
+        }
+        p{
+            text-align: center;
+            margin-right: 250px;
+                margin-left: 200px;
+                font-size: 20px;
+
+        }
+
+           
+            hr{
+                margin-top: 1x; 
+
+                
+            }
+            .vl {
+  border-left: 3px solid black;
+             height: 5000px;
+            }
+            
+            
+            </style>
+    
+    <div class="vl">
+    <div id="content">
+
+    <div style="text-align: center;">
+        <img src="logo.jpg" alt="HTML5 Icon" width="128" height="128">
+
+        <h1>MCdonalds Revenue Report</h1>
+        <hr>
+        <a href="MCdonaldreport.pdf" download="MCDONALD.PDF">click to download report</a>
+
+    </div>
+    <hr>
+    <div class=container4>
+            <h2>Impossible burger impact</h2>
+
+        <p >Hey Boss! Hope you're having a good time on your Yacht, i mean work. You wanted me to
+            figure out if the new impossible burger made an impact on our revenue. 
+            Well the simple answer is - <b> Yes </b>   Our sales have taken a big hit since the launch of new impossible burger. Let me show you how the impossible burger has impacted our revenue</p> 
+            <p>
+            Let's take a look at the monthly average revenue for each year. I'm computing total average monthly sales
+            for each month instead of sum of their sum since I don't have the complete data for 2019. There was a <b>15%</b> in 2017's revenue and <b>5%</b> increase in 2018, taking the revenue upto <b>$12.8 million</b>. But this
+            upward trend of increasing revenue didn't occur for 2019, as revenue dropped by <b>2%</b> decreasing it to <b>$12.1 million</b>.
+        </p>
+        <div id="stacked_columns" class = 'wrap' style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto"></div>
+       
+           <hr>
+
+    </div>
+    <p > Taking a look at the chart below, we see the revenue for each month increases with the year.
+        For year 2016 and 2017, we notice a positive slope for revenue from January to December. The revenue slightly dips beginning of every year in January. This can be explained by people switching to a healthier diet as a <i>new 
+            year resolution</i> <br>
+        In 2018, we notice a <b>14% </b> drop in revenue from the month September to October. This is the largest revenue drop we've experienced in the company's history. This drop occurred at the same time the Impossible burger meaning a lot of people made a switch to Burger King.
+        </p>
+
+    <div id="line_chart_TR" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto"></div>
+    <hr>
+
+        <p> Let's take a closer look on how revenue got impacted by the impossible burger. We see that
+            up till october 2018, the months have a revenue of around <b>$13 million</b> on average. When the impossible
+        burger were released there was a big drop in revenue. Impossible burger just didn't affect Octobers revenue but also 
+        all months after it. Revenue in all months of 2019 was lower than the revenue of those in 2018.
+    </p>
+        <div id="Single_line" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto"></div>
+
+        <p>
+            Looking at the revenue for different regions after the impossible burger was released, we see 
+            that all regions took a hit and their revenue went down significantly.
+        </p>
+        <div id="chart_regions" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto"></div>
+        <h3>Result </h3>
+        <p>
+            McDonald's revenue took a big hit after the impossible burger hit the market. 
+            People are now more willing to switch for vegan options. As of 2019, <b>3.4%</b> of the US population
+            is Vegan and we need to tap that market. I suggest that the company should invests its money into developing 
+            its own impossible burger. It should also invest in a healthier food menu so we can target
+            all the newly converted health freaks in the month of January every year.
+        <hr>
+        <p>Looking at the share of each type of burger, Hamburger is wins by a huge majority. With 60% share, most of our revenue comes from the sales of these hamburgers.</p>
+        <div id="pie_chart" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto"></div>
+        
+        <h2> Micro Trends</h2>
+        <p> 
+            I was also given the revenue   for each day in the month of January 2016. All the insights and trends I get from this data is only valid if the consumer purchases the same way on weekdays as they did in 2016 <br>
+            I noticed that average  Fillet Fish sales were particularly high for Fridays. After plotting 
+            it on a chart it comfimed that Friday  had the highest sales for fillet fish. This is can be explained as a large number of peple go out Friday  night and eat at fast food restaurants like 
+            McDonalds. Weekends  had the lowest revenue as its a holiday and most people eat at home.  
+        </p>
+        <div id="daily_col" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto;"></div>
+        <p>
+            South West, South East and Central regions interact the same way as Fillet Fish where the highest average revenue is on a Friday while the lowest revenue days are the weekends, Saturday and Sunday. 
+
+        </p>
+        <div id="daily_reg" style="min-width: 310px; max-width: 800px; height: 600px; margin: 0 auto;"></div>
+
+       
+        <script src = 'https://code.highcharts.com/highcharts.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
+
+        <script src = 'LineChartsTR.js'></script>
+        <script src = 'singleLine.js'></script>
+        <script src = 'stacked_col.js'></script>
+        <script src = 'regions.js'></script>
+        <script src = 'pie.js'></script>
+        <script src = 'daily.js'></script>
+        <script src = 'region_daily.js'></script>
+        <script src = 'down.js'></script>
+
+
+        </div>
+    </div>    
+
+
+
+
+        
+        
+    </body>
+</html>
